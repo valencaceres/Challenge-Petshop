@@ -51,17 +51,22 @@ body{
     width: 90%;
     background-image: url(/assets/header1.jpg);
     background-size: cover;
+    flex-direction: column;
+    justify-content: space-between;
 
 }
 .title{
-    opacity: 0.8;
-    background-color: #73afca;
+    
+    background-color: #73aeca95;
     padding: 0 20px 0 20px;
     color: white;
+    width: 100%;
+    height: 10%;
 }
 .botHeader{
-    background-color: #73afca;
+    background-color: #73aeca95;
     width: 100%;
+    height: 10%;
 }
 
 .searchBar {
@@ -117,13 +122,14 @@ body{
 }
 
 .info{
-    height: 400px;
-    width: 1100px;
+    width: 90%;
 }
 .background{
-    background-color: #5889a0;
+    background-color: #8b979d8b;
     padding-top: 30px;
+    box-shadow: black 5px 5px 5px;
     height: 75vh;
+    margin: 5px 0;
 }
 .image{
     margin-top: 15px;
