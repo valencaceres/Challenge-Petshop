@@ -63,6 +63,7 @@ body{
 }
 .mapita {
     width: 70%;
+    margin-top: 3rem;
     padding-bottom: 2rem;
     border-radius: 1rem;
 }
@@ -71,3 +72,4 @@ body{
     display: flex;
     justify-content: center;
 }
+
