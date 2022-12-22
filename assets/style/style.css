@@ -61,3 +61,13 @@ body{
     background-color:  #73afca;
     height: 80px;
 }
+.mapita {
+    width: 70%;
+    padding-bottom: 2rem;
+    border-radius: 1rem;
+}
+.diva {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}
