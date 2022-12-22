@@ -7,10 +7,9 @@ let events;
 fetch('https://mindhub-xj03.onrender.com/api/petshop')
 .then((result) =>   {return result.json()})
 .then (data => {
-    events= data
+    events = data
     // function farmacia
-    let categoryFarmacity= filterCategoryFarmacia(events)
-    
+    let categoryFarmacity = filterCategoryFarmacia(events)
     //function render farmacia
     renderCard (categoryFarmacity, card) 
 })

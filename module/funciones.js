@@ -50,4 +50,4 @@ export function filterCategoryJugueteria(lista) {
 
 
 
-    {/* <a id="information" href="}" class="btn btn-danger">Utimas unidades</a> */}
+    /* <a id="information" href="}" class="btn btn-danger">Utimas unidades</a> */
