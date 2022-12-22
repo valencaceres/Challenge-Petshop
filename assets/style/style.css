@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 nav{
     background-color: #66a7c5;
@@ -11,6 +12,9 @@ nav{
     text-decoration: none;
     color: white;
     padding: 0 10px 0 10px;
+}
+.anchor:hover {
+    color: black;
 }
 #img{
     height: 70px;
@@ -38,6 +42,24 @@ body{
 }
 .botHeader{
     background-color: #73afca;
+}
+
+.searchBar {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+#searchBar {
+    height: 2.5rem;
+    width: 25rem;
+    border: 3px solid #73afca;
+    border-radius: 2rem;
+    text-align: center;
+}
+
+#farmaciaMain {
+    height: 75vh;
 }
 
 #info{
