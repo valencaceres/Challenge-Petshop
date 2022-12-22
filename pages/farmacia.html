@@ -10,66 +10,47 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
     </head>
 <body>
+    <nav class="d-flex justify-content-evenly ">
+        <div class="pt-3">
+            <a href="../index.html"><img src="../assets/logo.png" alt="" id="img"></a>
+        </div>
+        <div class="navbar">
+            <a href="../index.html" class="anchor">Inicio</a>
+            <a href="#" class="anchor">Farmacia</a>
+            <a href="../pages/juguetes.html" class="anchor">Jugueteria Canina</a>
+            <a href="../pages/contactUs.html" class="anchor">Contactanos</a>
+        </div>
+    </nav>
     <header>
-        <nav class="d-flex justify-content-evenly ">
-            <div class="pt-3">
-                <a href="../index.html"><img src="../assets/logo.png" alt="" id="img"></a>
-            </div>
-            <div class="navbar">
-                <a href="../index.html" class="anchor">Inicio</a>
-                <a href="#" class="anchor">Farmacia</a>
-                <a href="../pages/juguetes.html" class="anchor">Jugueteria Canina</a>
-                <a href="../pages/contactUs.html" class="anchor">Contactanos</a>
-            </div>
-        </nav>
     </header>
     <main id="farmaciaMain">
-        <div class="searchBar">
-            <input class="inputArea" type="text" placeholder="Buscar Productos..." aria-label="search" id="searchBar">
-        </div>
-        <div class="d-flex justify-content-around mt-3" id="farmaciaContainer">
-        <div class="card" style="width: 18rem;" id="farmaciaCard">
-            <img src="../assets/farmacia1.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-            <h5 class="card-title">Cepillo para gatos de pelo largo</h5>
-            <p class="card-text">Cepillo especial para gatos de pelo largo</p>
-            <p class="card-text">Precio: $1500</p>
-            <a href="../pages/detalles.html" class="btn btn-primary">Detalles</a>
-            </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <img src="../assets/farmacia2.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-            <h5 class="card-title">Pulguicidas</h5>
-            <p class="card-text">Pulguicida Bravecto para gatos y perros</p>
-            <p class="card-text">Precio: $740</p>
-            <a href="../pages/detalles.html" class="btn btn-primary">Detalles</a>
-            </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <img src="../assets/farmacia3.jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-            <h5 class="card-title">Medicina para mascotas bebés</h5>
-            <p class="card-text">Medicamento anti parasitario para gatos menores a un año</p>
-            <p class="card-text">Precio: $450</p>
-            <a href="../pages/detalles.html" class="btn btn-primary">Detalles</a>
-            </div>
-        </div>
-    </div>
+      <div class="searchBar">
+        <input
+          class="inputArea"
+          type="text"
+          placeholder="Buscar Productos..."
+          aria-label="search"
+          id="searchBar"
+        />
+      </div>
+      <div class="d-flex justify-content-around mt-3" id="containerCard"></div>
     </main>
     <footer>
-        <footer class="footer d-flex justify-content-between align-items-center">
-            <div class="mx-5">
-                <a href=""><img src="./assets/logoinstagram.png" alt="" class="footerLogos"></a>
-                <a href=""><img src="./assets/logoWhatsapp.png" alt="" class="footerLogos"></a>
-            </div>
-            <div class="mx-5">
-                <h2 class="fs-1">Cohort 39/40</h2>
-            </div>
-            </footer>
+      <footer class="footer d-flex justify-content-between align-items-center">
+        <div class="mx-5">
+          <a href=""
+            ><img src="../assets/logoinstagram.png" alt="" class="footerLogos"
+          /></a>
+          <a href=""
+            ><img src="../assets/logoWhatsapp.png" alt="" class="footerLogos"
+          /></a>
+        </div>
+        <div class="mx-5">
+          <h2 class="fs-1">Cohort 39/40</h2>
+        </div>
+      </footer>
     </footer>
-    <script src="../module/funciones.js"></script>
-    <script src="../famacity.js"></script>
+    <script type="module" src="../famacity.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+  </body>
 </html>
