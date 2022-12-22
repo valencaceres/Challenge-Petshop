@@ -1,7 +1,7 @@
 
 import {renderCard, filterCategoryFarmacia} from "./module/funciones.js"
 
-let card= document.getElementById("containerCard")
+let card = document.getElementById("containerCard")
 
 let events;
 fetch('https://mindhub-xj03.onrender.com/api/petshop')
