@@ -50,4 +50,7 @@ export function filterCategoryJugueteria(lista) {
 
 
 
-    /* <a id="information" href="}" class="btn btn-danger">Utimas unidades</a> */
+export function buscador (lista, input) {
+    return lista.filter(element => element.producto.toLowerCase().includes(input.toLowerCase()));
+    } 
+    

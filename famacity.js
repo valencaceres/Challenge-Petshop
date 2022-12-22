@@ -1,7 +1,8 @@
 
-import {renderCard, filterCategoryFarmacia} from "./module/funciones.js"
+import {renderCard, filterCategoryFarmacia, buscador} from "./module/funciones.js"
 
 let card = document.getElementById("containerCard")
+let containerInput= document.getElementById("containerInput") 
 
 let events;
 fetch('https://mindhub-xj03.onrender.com/api/petshop')
@@ -9,14 +10,24 @@ fetch('https://mindhub-xj03.onrender.com/api/petshop')
 .then (data => {
     events = data
     // function farmacia
-    let categoryFarmacity = filterCategoryFarmacia(events)
+    let farmacia = filterCategoryFarmacia(events)
     //function render farmacia
-    renderCard (categoryFarmacity, card) 
+    renderCard (farmacia, card) 
+
 })
 .catch( err => {
     console.log(err)
 }) 
 
+
+
+
+containerInput.addEventListener("input", e => {
+let valor=  e.target.value
+let farmacia = filterCategoryFarmacia(events)
+let encontrado = buscador(farmacia, valor)
+renderCard(encontrado, card)
+}) 
 
 
 
