@@ -40,6 +40,10 @@ body{
     background-color: #73afca;
 }
 
+#farmaciaMain {
+    height: 75vh;
+}
+
 #info{
     height: 400px;
     width: 860px;
