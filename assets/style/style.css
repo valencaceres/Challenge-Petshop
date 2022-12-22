@@ -124,6 +124,9 @@ body{
         width: 100%;
         min-height: 790px;
     }
+    .header{
+        width: 100%;
+    }
     .botHeader{
         width: 100%;
     }
