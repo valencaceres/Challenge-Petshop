@@ -55,6 +55,7 @@ body{
     justify-content: space-between;
 
 }
+
 .title{
     
     background-color: #73aeca95;
@@ -114,11 +115,20 @@ body{
     justify-content: space-evenly;
     text-align: center;
 }
+.container-img{
+    display: flex;
+    justify-content: center;
+    width: 100%;
 
+}
+.img-detail{
+    width: 50%;
+}
 .card-img-top {
     max-height: 15rem;
     min-height: 15rem;
-    object-fit: fill;
+    object-fit: contain;
+    background-color: white;
 }
 
 .info{

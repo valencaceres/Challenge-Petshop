@@ -1,5 +1,5 @@
 
-const card= document.getElementById("containerCard")  
+const card= document.getElementById("cardContainer")  
 
 
 let events;
@@ -23,7 +23,7 @@ function renderDetails (lista, containerDetails) {
   containerDetails.innerHTML=  `
   <div class="p-5 container-details-card d-flex justify-content-center aling-item-center flex-column">
   <div class="container-img">
-  <img src="https://www.portalveterinaria.com/upload/20200703080947schafer-dog-4357790_1920.jpg" class="img-detail rounded" alt="${lista.producto}">
+  <img src="${lista.imagen}" class="img-detail rounded" alt="${lista.producto}">
   </div>
   <div class="container-h3 d-flex justify-content-center flex-column text-center"  >
   <h3 class="p-4" >${lista.producto}</h3>
