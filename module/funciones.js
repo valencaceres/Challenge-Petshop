@@ -51,6 +51,12 @@ export function filterCategoryJugueteria(lista) {
 
 
 export function buscador (lista, input) {
-    return lista.filter(element => element.producto.toLowerCase().includes(input.toLowerCase()));
+    let listado = lista.filter(element => element.producto.toLowerCase().includes(input.toLowerCase()));
+    if (!listado){
+        return console.log(error)
+    }else {
+        return listado
+
+    }
     } 
     

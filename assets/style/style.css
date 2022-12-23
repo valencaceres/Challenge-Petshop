@@ -6,22 +6,23 @@
 }
 nav{
     background-color: #fff700dd;
-    height: 100px;
+    height: 10%;
     box-shadow: rgb(108, 88, 59) 5px 5px 5px;
     position: fixed;
     top:0
 
 }
 .nav-item {
-    border: rgb(255, 200, 0) solid 1px;
     border-radius: 20px;
     background-color: rgb(255, 200, 0);
 
 }
 main{
+    height: 80%;
     min-height: 80vh;
 }
 footer{
+    height: 10%;
     margin-top: 3px;
 }
 .anchor{
@@ -36,7 +37,7 @@ footer{
     height: 70px;
 }
 #menu{
-    background-color: #fff700dd;
+    background-color: #fff70000;
     padding-left: 10px;
 
 
@@ -153,6 +154,7 @@ body{
     box-shadow: rgb(246, 145, 3) 5px 5px 5px;
     margin: 10px 0;
     border-radius: 20px;
+    display: block;
 }
 .image{
     margin-top: 15px;
