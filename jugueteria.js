@@ -14,10 +14,13 @@ fetch('https://mindhub-xj03.onrender.com/api/petshop')
     
     //function render farmacia
     renderCard (jugueteria, card2) 
+
 })
 .catch( err => {
     console.log(err)
 }) 
+
+
 
 
 
@@ -27,6 +30,13 @@ let jugueteria= filterCategoryJugueteria(events)
 let encontrado = buscador(jugueteria, valor)
 renderCard(encontrado, card2)
 }) 
+
+
+
+
+
+
+
 
 
 

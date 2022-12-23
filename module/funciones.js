@@ -6,6 +6,9 @@
 export function renderCard (listaEvents,container) {
     container.innerHTML = "";
     let listado = "";
+    if (listaEvents.length === 0){
+        listado = `Lo sentimos, no pudimos encontrar este producto...`
+    }else{    
     listaEvents.forEach((propiedades) => {
         if(propiedades.disponibles < 5 ) {
         listado += 
@@ -32,25 +35,15 @@ export function renderCard (listaEvents,container) {
             </div>
         `;
         }
-    });
+    })};
     container.innerHTML = listado
 } 
-
-
-
-
 export function filterCategoryFarmacia(lista) {
     return lista.filter(element =>element.categoria === "farmacia" )
 } 
-
-
 export function filterCategoryJugueteria(lista) {
     return lista.filter(element =>element.categoria === "jugueteria" )
 }
-
-
-
 export function buscador (lista, input) {
     return lista.filter(element => element.producto.toLowerCase().includes(input.toLowerCase()));
     } 
-    

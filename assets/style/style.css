@@ -19,7 +19,10 @@ nav{
 
 }
 main{
-    height: 80vh;
+    min-height: 80vh;
+}
+footer{
+    margin-top: 3px;
 }
 .anchor{
     text-decoration: none;
@@ -40,13 +43,15 @@ main{
 }
 body{
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     background-color: rgb(250, 250, 243) !important
 
 }
 .header{
-    min-height: 390px;
     width: 860px;
     height: 20vh;
+    flex:0;
     background-image: url(../header1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -67,7 +72,7 @@ body{
     box-shadow: rgb(246, 145, 3) 5px 5px 5px;
     border-radius: 20px;
     margin-top: 20vh;
-    background-position: center;
+    
 }
 .title{
     
@@ -77,6 +82,14 @@ body{
     color: rgb(0, 0, 0);
     width: 100%;
     height: 10%;
+}
+.title1{
+    background-color: #f28a0a95;
+    border-radius: 20px;
+    padding: 0 20px 0px 20px;
+    color: rgb(0, 0, 0);
+    width: 100%;
+    height: 12%;
 }
 .botHeader{
     background-color: #f28a0a95;
@@ -134,17 +147,28 @@ body{
     justify-content: space-evenly;
     text-align: center;
 }
+.container-img{
+    display: flex;
+    justify-content: center;
+    width: 100%;
 
+}
+.img-detail{
+    width: 50%;
+}
 .card-img-top {
     max-height: 15rem;
     min-height: 15rem;
-    object-fit: fill;
+    object-fit: contain;
+    background-color: white;
 }
 
 .background{
     background-color: #f28a0a6e;
+    height: 800px;
+
     box-shadow: rgb(246, 145, 3) 5px 5px 5px;
-    margin: 10px 0;
+    margin: 15px 0;
     border-radius: 20px;
     height: fit-content !important;
 }
@@ -159,6 +183,7 @@ body{
     margin-bottom: 20px;
     padding-top: 15px;
     text-align: start;
+    font-size: 14px;
     color: rgb(0, 0, 0);
 }
 .footerLogos{
@@ -186,11 +211,15 @@ body{
 }
 .data{
     width: 50%;
+    height: fit-content !important;
 }
 @media (min-width:320px) and (max-width: 767px){
     main{
         width: 100%;
         min-height: 790px;
+    }
+    #menu{
+        background-color: #fff700dd;
     }
     .header{
         width: 100%;
