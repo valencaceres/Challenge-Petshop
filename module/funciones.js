@@ -22,7 +22,6 @@ export function renderCard (listaEvents,container) {
     <p class="card-text">Precio: ${propiedades.precio}</p>
     <a href="./details.html?id=${propiedades._id}" class="btn btn-dark">Ver más...</a>
     <button href="" class="btn btn-warning" onclick="guardarFav(${propiedades._id})" id="${propiedades._id}"> Agregar al carrito <img class= "w-25 rounded-2" src="https://t4.ftcdn.net/jpg/03/18/62/29/240_F_318622912_IgyaJDXVei9YTsw2BWuJzQLxY6Mr6kDE.jpg"  alt="Carrito"> <br> Ultimas unidades!!! </button>
-    
     </div>
     </div>
 `; 

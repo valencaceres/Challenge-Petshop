@@ -29,8 +29,8 @@ function renderDetails (lista, containerDetails) {
   <h3 class="p-4" >${lista.producto}</h3>
   <p>${lista.descripcion}</p>
   <p> Disponibilidad : ${lista.disponibles}</p>
-  <p class="bg-secondary rounded-4 p-2">Precio : ${lista.precio}</p>
-  but
+  <p class="bg-warning rounded-4 p-2">Precio: $${lista.precio} <br> Comprar</p>
+  
   </div>
 ` 
 }
