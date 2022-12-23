@@ -26,7 +26,6 @@ containerInput.addEventListener("input", e => {
 let valor=  e.target.value
 let farmacia = filterCategoryFarmacia(events)
 let encontrado = buscador(farmacia, valor)
-console.log(encontrado)
 renderCard(encontrado, card)
 }) 
 
