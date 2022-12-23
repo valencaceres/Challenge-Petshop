@@ -30,9 +30,12 @@ function renderDetails (lista, containerDetails) {
   <p>${lista.descripcion}</p>
   <p> Disponibilidad : ${lista.disponibles}</p>
   <p class="bg-secondary rounded-4 p-2">Precio : ${lista.precio}</p>
+  but
   </div>
 ` 
 }
+
+
 
 
 
