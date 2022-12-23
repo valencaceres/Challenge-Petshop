@@ -16,7 +16,7 @@ export function renderCard (listaEvents,container) {
     <p class="card-text">${(propiedades.descripcion).slice(0,120)}...</p>
     <p class="card-text">Precio: ${propiedades.precio}</p>
     <a href="./details.html?id=${propiedades._id}" class="btn btn-dark">Ver más...</a>
-    <a href="./details.html?id=${propiedades._id}" class="btn btn-warning"> Agregar al carrito <img class= "w-25 rounded-2" src="https://t4.ftcdn.net/jpg/03/18/62/29/240_F_318622912_IgyaJDXVei9YTsw2BWuJzQLxY6Mr6kDE.jpg"  alt="Carrito"> <br> Ultimas unidades!!!</a>
+    <button href="" class="btn btn-warning" onclick="guardarFav(${propiedades._id})" id="${propiedades._id}"> Agregar al carrito <img class= "w-25 rounded-2" src="https://t4.ftcdn.net/jpg/03/18/62/29/240_F_318622912_IgyaJDXVei9YTsw2BWuJzQLxY6Mr6kDE.jpg"  alt="Carrito"> <br> Ultimas unidades!!! </button>
     
     </div>
     </div>
@@ -30,8 +30,8 @@ export function renderCard (listaEvents,container) {
             <p class="card-text">${(propiedades.descripcion).slice(0,120)}...</p>
             <p class="card-text">Precio: ${propiedades.precio}</p>
             <a href="./details.html?id=${propiedades._id}" class="btn btn-dark">ver más...</a>
-            <a href="./details.html?id=${propiedades._id}" class="btn btn-info"> Agregar al carrito <img class= "w-25 rounded-2" src="https://t4.ftcdn.net/jpg/03/18/62/29/240_F_318622912_IgyaJDXVei9YTsw2BWuJzQLxY6Mr6kDE.jpg" 
-            alt="Carrito"> </a>
+            <button href="" class="btn btn-info" onclick="guardarFav(${propiedades._id})" id="${propiedades._id}" > Agregar al carrito <img class= "w-25 rounded-2" src="https://t4.ftcdn.net/jpg/03/18/62/29/240_F_318622912_IgyaJDXVei9YTsw2BWuJzQLxY6Mr6kDE.jpg" 
+            alt="Carrito"> </button>
             </div>
             </div>
         `;
@@ -39,6 +39,15 @@ export function renderCard (listaEvents,container) {
     });
     container.innerHTML = listado
 } 
+
+
+
+let favoritos= []
+
+function guardarFav(eventos) {
+console.log("por favorrr")
+}
+
 
 
 
