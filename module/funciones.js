@@ -6,8 +6,13 @@
 export function renderCard (listaEvents,container) {
     container.innerHTML = "";
     let listado = "";
+    if (listaEvents.producto === 0) {
+        listado= `
+        <p> Error </p>
+        `
+    } else {
     listaEvents.forEach((propiedades) => {
-        if(propiedades.disponibles < 5 ) {
+        if (propiedades.disponibles < 5 ) {
         listado += 
     `<div class="card" style="width: 18rem;">
     <img src="${propiedades.imagen}" class="card-img-top" alt="${propiedades.producto}">
@@ -36,11 +41,13 @@ export function renderCard (listaEvents,container) {
             </div>
         `;
         }
-    });
+    }); } 
     container.innerHTML = listado
 } 
 
 
+
+/* 
 
 let favoritos= []
 
@@ -48,7 +55,7 @@ function guardarFav(eventos) {
 console.log("por favorrr")
 }
 
-
+ */
 
 
 
@@ -63,7 +70,20 @@ export function filterCategoryJugueteria(lista) {
 
 
 
+
+
+
 export function buscador (lista, input) {
     return lista.filter(element => element.producto.toLowerCase().includes(input.toLowerCase()));
     } 
-    
+
+
+
+
+    /*   let nuevaFiltrado= filtrado.map(cadaValue => lista.filter(objeto => {
+        return objeto.producto !== cadaValue 
+    }))
+    console.log(cadaValue)
+    if (nuevaFiltrado) {
+    }
+    return */ 
