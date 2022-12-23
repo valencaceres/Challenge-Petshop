@@ -6,6 +6,9 @@
 export function renderCard (listaEvents,container) {
     container.innerHTML = "";
     let listado = "";
+    if (listaEvents.length === 0){
+        listado = `lo sentimos no encontramos esto`
+    }else{    
     listaEvents.forEach((propiedades) => {
         if(propiedades.disponibles < 5 ) {
         listado += 
@@ -32,7 +35,7 @@ export function renderCard (listaEvents,container) {
             </div>
         `;
         }
-    });
+    })};
     container.innerHTML = listado
 } 
 
@@ -51,12 +54,12 @@ export function filterCategoryJugueteria(lista) {
 
 
 export function buscador (lista, input) {
-    let listado = lista.filter(element => element.producto.toLowerCase().includes(input.toLowerCase()));
-    if (!listado){
-        return console.log(error)
-    }else {
-        return listado
+    let listade = lista.filter(element => element.producto.toLowerCase().includes(input.toLowerCase()));
+ if (listade.length === 0){
+    return listade
+ }else {
+     return listade 
+ }
 
-    }
     } 
     
