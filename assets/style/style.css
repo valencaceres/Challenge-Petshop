@@ -236,6 +236,9 @@ body{
         width: 100%;
         min-height: 790px;
     }
+    #menu{
+        background-color: #fff700dd;
+    }
     .header{
         width: 100%;
     }
