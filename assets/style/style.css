@@ -19,10 +19,7 @@ nav{
 
 }
 main{
-    min-height: 80vh;
-}
-footer{
-    margin-top: 3px;
+    height: 80vh;
 }
 .anchor{
     text-decoration: none;
@@ -36,7 +33,7 @@ footer{
     height: 70px;
 }
 #menu{
-    background-color: #fff700dd;
+    background-color: #fff70000;
     padding-left: 10px;
 
 
@@ -59,12 +56,10 @@ body{
     border-radius: 20px;
     margin-top: 20vh;
     box-shadow: rgb(246, 145, 3) 5px 5px 5px;
-
-
 }
 .header1{
     min-height: 500px;
-    width: 90%;
+    width: 80%;
     background-image: url(../header1.jpg);
     background-size: cover;
     flex-direction: column;
@@ -72,7 +67,7 @@ body{
     box-shadow: rgb(246, 145, 3) 5px 5px 5px;
     border-radius: 20px;
     margin-top: 20vh;
-    
+    background-position: center;
 }
 .title{
     
@@ -119,7 +114,6 @@ body{
 #containerCard2 div {
     background-color: rgb(246, 145, 3);
     box-shadow: rgb(246, 145, 3) 5px 5px 5px;
-
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -135,7 +129,6 @@ body{
 #containerCard div {
     background-color: rgb(246, 145, 3);
     box-shadow: rgb(246, 145, 3) 5px 5px 5px;
-
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -153,6 +146,7 @@ body{
     box-shadow: rgb(246, 145, 3) 5px 5px 5px;
     margin: 10px 0;
     border-radius: 20px;
+    height: fit-content !important;
 }
 .image{
     margin-top: 15px;
@@ -174,7 +168,7 @@ body{
 .footer{
     margin-top: 5vh;
     background-color:   #fff700dd;
-    height: 10vh;
+    height: 20vh;
 }
 .mapita {
     width: 70%;
