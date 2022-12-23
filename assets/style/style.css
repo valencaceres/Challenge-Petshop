@@ -19,9 +19,12 @@ nav{
 
 }
 main{
-    min-height: 80vh;
+    height: fit-content;
+    flex:1;
 }
 footer{
+    height: 20vh;
+    flex:0;
     margin-top: 3px;
 }
 .anchor{
@@ -36,20 +39,22 @@ footer{
     height: 70px;
 }
 #menu{
-    background-color: #fff700dd;
+    background-color: #fff70000;
     padding-left: 10px;
 
 
 }
 body{
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     background-color: rgb(250, 250, 243) !important
 
 }
 .header{
-    min-height: 390px;
     width: 860px;
     height: 20vh;
+    flex:0;
     background-image: url(../header1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -160,8 +165,10 @@ body{
 
 .background{
     background-color: #f28a0a6e;
+    height: 800px;
+    border: red 2px solid;
     box-shadow: rgb(246, 145, 3) 5px 5px 5px;
-    margin: 10px 0;
+    margin: 15px 0;
     border-radius: 20px;
 }
 .image{
@@ -175,6 +182,7 @@ body{
     margin-bottom: 20px;
     padding-top: 15px;
     text-align: start;
+    font-size: 14px;
     color: rgb(0, 0, 0);
 }
 .footerLogos{
@@ -201,7 +209,7 @@ body{
     margin: 10px;
 }
 .data{
-    width: 50%;
+
 }
 @media (min-width:320px) and (max-width: 767px){
     main{
