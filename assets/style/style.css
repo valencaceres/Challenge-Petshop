@@ -11,12 +11,11 @@ body {
 }
 header {
   width: 100%;
-  height: 10vh;
+  height: 5vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 3rem;
-  background-color: rgba(248, 249, 177, 0.158);
 }
 .logo {
   width: 5rem;
@@ -34,10 +33,12 @@ nav {
 nav a {
   text-decoration: none;
   color: rgb(0, 0, 0);
-  font-size: larger;
+  font-size: x-large;
+  font-weight: bold;
+
   padding: 0.5rem;
   border-radius: 10px;
-  transition: 1s;
+  transition: 1.5s;
 }
 nav a:hover {
   color: rgb(255, 255, 255);
@@ -51,6 +52,14 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.800),
+    rgba(255, 255, 255, 0.800)
+  ),
+  url("https://img.freepik.com/fotos-premium/juguete-lindo-inconsutil-perro-fondo-modelo-corazon-juguete-animal-domestico-ilustracion-fondo-pantalla-arte-mascotas-patron-tela_34056-707.jpg");
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
 }
 main section {
   width: 100%;
@@ -92,15 +101,21 @@ main section {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 5rem;
-  height: 60vh;
-  background-color: rgba(248, 249, 177, 0.158);
+  transition: 1s;
+  font-size: 23px;
+  height: 80vh;
+
+}
+.segundo:hover {
+  background-color: rgba(0, 0, 0, 0.717);
+  color: white;
 }
 .segundo div {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   width: 30%;
-  height: 50%;
+  height: 70%;
   margin-left: 3rem;
 }
 .segundo img {
@@ -112,4 +127,22 @@ main section {
 .dos {
   display: flex;
   flex-direction: row;
+}
+footer {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 2rem;
+
+}
+.imgF {
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.imgF img {
+  width: 30px;
 }
