@@ -8,7 +8,9 @@ fetch("https://mindhub-xj03.onrender.com/api/petshop")
   .then((data) => {
     events = data;
     const queryString = location.search;
+    console.log(queryString)
     const param = new URLSearchParams(queryString).get("id");
+    console.log(param)
     let everyEvent = events.find((item) => item._id == param);
     renderDetails(everyEvent, card);
   })

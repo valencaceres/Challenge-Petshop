@@ -8,10 +8,15 @@ export function renderCard(listaEvents, container) {
   } else {
     listaEvents.forEach((propiedades) => {
       if (propiedades.disponibles < 5) {
-        listado += `<div class="card" style="width: 18rem;">
-    <img src="${propiedades.imagen}" class="card-img-top" alt="${
-          propiedades.producto
-        }">
+        listado += `<div class="card" style="width:22% ; margin: 1rem ; 
+  height: 70vh;
+  padding: 2px;
+  ">
+    <img src="${propiedades.imagen}" style="
+  object-fit: cover;
+  width: 100%;
+  height: 50%;
+    " alt="${propiedades.producto}">
     <div class="card-body">
     <h5 class="card-title">${propiedades.producto}</h5>
     <p class="card-text">${propiedades.descripcion.slice(0, 120)}...</p>
@@ -24,10 +29,14 @@ export function renderCard(listaEvents, container) {
 `;
       } else {
         listado += `
-            <div class="card" style="width: 18rem;">
-            <img src="${propiedades.imagen}" class="card-img-top" alt="${
-          propiedades.producto
-        }">
+            <div class="card" style="  style="width:22% ; margin: 1rem ; 
+            height: 70vh;
+            padding: 2px;
+            "">
+            <img src="${propiedades.imagen}" style="
+  object-fit: cover;
+            
+            " alt="${propiedades.producto}">
             <div class="card-body">
             <h5 class="card-title">${propiedades.producto}</h5>
             <p class="card-text">${propiedades.descripcion.slice(0, 120)}...</p>

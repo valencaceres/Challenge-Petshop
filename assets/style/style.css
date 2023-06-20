@@ -53,13 +53,15 @@ main {
   flex-direction: column;
   align-items: center;
   background: linear-gradient(
-    rgba(255, 255, 255, 0.800),
-    rgba(255, 255, 255, 0.800)
-  ),
-  url("https://img.freepik.com/fotos-premium/juguete-lindo-inconsutil-perro-fondo-modelo-corazon-juguete-animal-domestico-ilustracion-fondo-pantalla-arte-mascotas-patron-tela_34056-707.jpg");
-background-position: center;
-background-size: cover;
-background-repeat: no-repeat;
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.8)
+    ),
+    url("https://previews.123rf.com/images/elenavdovina/elenavdovina1611/elenavdovina161100067/66521953-productos-para-mascotas-fondo-transparente-blanco-vector-sin-fisuras-fondo-blanco-iconos-con.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 100vh;
 }
 main section {
   width: 100%;
@@ -104,7 +106,6 @@ main section {
   transition: 1s;
   font-size: 23px;
   height: 80vh;
-
 }
 .segundo:hover {
   background-color: rgba(0, 0, 0, 0.717);
@@ -130,19 +131,60 @@ main section {
 }
 footer {
   width: 100%;
-  height: 20vh;
+  height: 15vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-inline: 2rem;
-
 }
 .imgF {
+  width: 30%;
   height: 60%;
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.imgF a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
+}
+.searchBar {
+  margin: 2rem;
+  width: 30%;
+  display: flex;
+  align-items: center;
   justify-content: space-between;
 }
-.imgF img {
-  width: 30px;
+.searchBar input {
+  width: 90%;
+  padding: 0.5rem;
+  border-radius: 15px;
+  border: rgb(0, 0, 0) solid 1px;
 }
+#containerCard {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding: 3rem;
+}
+
+.name {
+  display: flex;
+  width: 40%;
+  height: 100%;
+  align-items: center;
+}
+
+footer h2 {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+}
+
+
